@@ -1,0 +1,73 @@
+ # 虚拟环境
+ .venv/
+ venv/
+ env/
+
+ # 字节码文件
+ __pycache__/
+ *.py[cod]
+ *$py.class
+
+ # C 扩展
+ *.so
+
+ # 分发 / 打包
+ build/
+ dist/
+ .eggs/
+ *.egg-info/
+ *.egg
+
+ # 安装器日志
+ pip-log.txt
+ pip-delete-this-directory.txt
+
+ # 单元测试 / 覆盖率
+ htmlcov/
+ .tox/
+ .nox/
+ .coverage
+ .coverage.*
+ .cache
+ nosetests.xml
+ coverage.xml
+ *.cover
+ *.py,cover
+ .hypothesis/
+ .pytest_cache/
+
+ # Django
+ *.log
+ local_settings.py
+ db.sqlite3
+ db.sqlite3-journal
+
+ # Flask / 通用
+ instance/
+ .webassets-cache
+
+ # Scrapy
+ .scrapy/
+
+ # Jupyter Notebook
+ .ipynb_checkpoints/
+
+ # IDE / 编辑器
+ .vscode/
+ .idea/
+ *.swp
+ *.swo
+ *~
+
+ # mypy / 类型检查
+ .mypy_cache/
+ .dmypy.json
+ dmypy.json
+
+ # pyright / pylance
+ .pyright/
+
+ # 杂项
+ *.log
+ .DS_Store
+ Thumbs.db
