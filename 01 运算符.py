@@ -32,6 +32,6 @@ absolute = abs(2-6)
 print("absolute: " + str(absolute))
 # 绝对值 Absolute value
 
-round = round(8/9, 2)
+rounded = round(8/9, 2)
+print("rounded: " + str(rounded))
 # 四舍五入 Round，保留2位小数
-
