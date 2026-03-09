@@ -32,6 +32,20 @@ absolute = abs(2-6)
 print("absolute: " + str(absolute))
 # 绝对值 Absolute value
 
-rounded = round(8/9, 2)
-print("rounded: " + str(rounded))
+round = round(8/9, 2)
+print("round: " + str(round))
 # 四舍五入 Round，保留2位小数
+
+summary = sum([1,2,3,4,5,6,7,8,9,10])
+print("summary: " + str(summary))
+# 求和 Sum
+
+
+minimal = min(1,2,3,4)
+print("minimal: " + str(minimal))
+# 最小值 Minimal
+
+maximal = max(1,2,3,4)
+print("maximal: " + str(maximal))
+# 最大值 Maximal
+
