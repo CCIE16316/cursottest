@@ -18,4 +18,4 @@ print(result3)
 # 1.4 sub替换
 result4 = re.sub(r'[-=]+','+++','aaa-----bbb=====--cccc')
 print(result4)
-# 
+
