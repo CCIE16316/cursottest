@@ -33,7 +33,7 @@ print(result6)
 # 匹配任何看不见的
 
 # 1.7 最强匹配，[\s\S]代表要么看得见，要么看不见。
-result7 = re.match(r'[\s\S]+', 'asdasda sd12312312312321\12\3123123k123\nms\s')
+result7 = re.match(r'[\s\S]+', r'asdasda sd12312312312321\12\3123123k123\nms\s')
 print(result7)
 # 匹配任何看不见的
 # .* 不行，因为多行内容无法显示

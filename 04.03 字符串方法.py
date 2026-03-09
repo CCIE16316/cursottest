@@ -1,11 +1,11 @@
 # 1.0 大小写
-str = "what makes it special in your eyes.TEST"
-print(str)
-print(str.capitalize())
+str10 = "what makes it special in your eyes.TEST"
+print(str10)
+print(str10.capitalize())
 # 首字母大写
-print(str.lower())
+print(str10.lower())
 # 小写
-print(str.upper())
+print(str10.upper())
 # 大写
 
 # dir(str) 可以查看帮助
