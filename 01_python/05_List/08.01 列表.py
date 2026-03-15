@@ -44,11 +44,8 @@ print(res)
 # 每次迭代出来的内容都乘以4
 
 
-# 1.10 追加列表到队尾
-test1 = []
-for i in 'abc':
-    test1.append(i*4)
-    print(test1)
-# 提取字符串，然后变成4倍，之后追加到[]队尾
+
+
+
 
 
