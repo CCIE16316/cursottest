@@ -14,3 +14,5 @@ sorted_ports = sorted(port_list, key=lambda x: list(map(int,x.replace('eth','').
 # list，把map对象转换成列表
 # 最后用sorted来排序
 print(sorted_ports)
+
+# 所以主要关注类型，如果是str那么排序会有问题，所以要转换成int.

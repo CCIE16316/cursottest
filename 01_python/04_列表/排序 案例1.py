@@ -20,3 +20,7 @@ for y in sorted_l1:
     result.append(port)
 
 print(result)
+
+
+
+# 所以主要关注类型，如果是str那么排序会有问题，所以要转换成int.
