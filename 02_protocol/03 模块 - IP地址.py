@@ -10,3 +10,8 @@ print(net1.num_addresses)
 print(ipaddress.ip_address('192.168.2.2') in net1)
 # 判断地址是否在范围内
 
+
+# 1.1 IP排序
+
+def sort_ip(net1):
+    return sorted(net1, key=lambda ip: ipaddress.ip_address(ip))
