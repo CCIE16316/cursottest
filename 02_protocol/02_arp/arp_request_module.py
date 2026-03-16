@@ -8,7 +8,7 @@ from scapy.all import ARP,sr1
 import logging
 logging.getLogger("kamene.runtime").setLevel(logging.ERROR)
 
-def arp_request(ip_address):
+def arp_request_func(ip_address):
     try:
         result_raw = sr1(ARP(pdst=ip_address),
             timeout=1,
@@ -19,6 +19,6 @@ def arp_request(ip_address):
         return ip_address, None
 
 if __name__ == "__main__":
-    arp_result = arp_request('192.168.2.10')
+    arp_result = arp_request_func('192.168.2.10')
     print("IP地址：",arp_result[0], "MAC地址：", arp_result[1])
 # 0号位就是IP地址，我们输入进去的192.168.2.34,1号位置就是hwsrc 其实就是要请求的MAC地址
