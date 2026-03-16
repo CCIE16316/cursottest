@@ -2,6 +2,7 @@ import ipaddress
 from multiprocessing.pool import ThreadPool
 import sys
 from pathlib import Path
+from time_decorator import run_time_module
 
 current_file = Path(__file__)
 project_root = current_file.parent.parent
@@ -9,6 +10,7 @@ sys.path.append(str(project_root))
 
 from arp_request_module import arp_request_func
 
+@run_time_module()
 def scapy_arp_scan_func(network):
     net = ipaddress.ip_network(network)
     ip_list = [ str(ip_add) for ip_add in net]
@@ -18,7 +20,7 @@ def scapy_arp_scan_func(network):
     pool.join()
     scan_dict = {}
     for r in result:
-        if r.get()[1]:
+        if r.get()[1]: # 我们arp_request_module里面的结果是键是IP，值为MAC地址
             scan_dict[r.get()[0]] = r.get()[1]
     return scan_dict
 
