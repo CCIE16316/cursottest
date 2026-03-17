@@ -1,0 +1,9 @@
+# /etc/passwd
+# ../../etc/passwd
+# ../../../etc/passwd
+# ../../../../etc/passwd
+# ../../../../../etc/passwd
+# ../../../../../../etc/passwd
+# ../../../../../../../etc/passwd
+/image_gallery.php
+# ../image_gallery.php
