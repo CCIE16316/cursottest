@@ -21,5 +21,6 @@ else:
             print("You Win")
 
 
-
+# https://ascii.co.uk/art 
+# 这个网站可以获取ASCII艺术，或者直接找AI生成。
 
