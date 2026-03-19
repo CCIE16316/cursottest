@@ -8,4 +8,3 @@ if height > 120:
         print(f"please give me $7")
 else:
     print(f"Your cant't ride.")
-

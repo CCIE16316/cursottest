@@ -6,8 +6,7 @@ if height >= 120:
         print("$5")
     elif age <= 18:
         print("$7")
-    else:
-        print("$12")    
-        # 这里一点点把范围收紧。
+    elif age >= 45 and age <=55: # 这里用逻辑与
+        print("Free $0")
 else:
-    print("srry you have to grow taller before you can ride.")
+    print("sorry you have to grow taller before you can ride.")
