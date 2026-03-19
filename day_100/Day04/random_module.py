@@ -1,7 +1,20 @@
 import random
-import my_module
 
-print(my_module.my_favourite_numbermy_favourite_number) # 这里其实就是调用了一个py，其实也是一个module
+# random_integer = random.randint(1,10)
+# print(random_integer)
 
-random_integer = random.randint(1,10)
-print(random_integer)
+# random_number_0_to_1 = random.random()
+# print(random_number_0_to_1) # 0.0 <= x < 1.0 区间
+
+# random_float = random.uniform(1,10)
+# print(random_float)
+# # 1 <= x <= 9
+
+
+random_heads_or_tails = random.randint(0,1)
+print(random_heads_or_tails)
+if random_heads_or_tails == 0:
+        print("Heads")  
+else:
+    print("Tails")
+
