@@ -1,5 +1,5 @@
 # word_list = ["aardvark","baboon","camel"]
-word_list = ["aardvark"]
+word_list = ["aaabbbccc"]
 
 import dis
 from mimetypes import guess_type
@@ -17,8 +17,8 @@ for position in range(word_length):
     placeholder += "_"
 print(placeholder)
 
-# Task 3
-correct_lettters = []
+# Task3 
+correct_letters = []
 game_over = False
 while not game_over:
     guess = input("Guess a letter:  ").lower()
@@ -26,11 +26,11 @@ while not game_over:
     for letter in chosen_word:
         if letter == guess:
             display += letter
-            correct_lettters.append(guess)
-        elif letter in correct_lettters:
+            correct_letters.append(guess)
+        elif letter in correct_letters:
             display += letter
         else:
-            display += "-"
+            display += "_"
     if "-" not in display:
         game_over = True
         print("You Win!")
