@@ -14,21 +14,26 @@ nr_number = int(input("How many numbers would you like? "))
 
 # 1.1 简单版
 list_new = []
-for char in range(1,nr_letter + 1):
+for char in range(0,nr_letter):
     # 如果nr_letter是4，那么就是range(1,5)，其实就是1、2、3、4轮
     list_new.append(random.choice(all_letter))
 
-for char in range(1,nr_symbol + 1):
+for char in range(0,nr_letter):
     # 如果nr_letter是4，那么就是range(1,5)，其实就是1、2、3、4轮
     list_new.append(random.choice(all_symbol))
 
-for char in range(1,nr_number + 1):
+for char in range(0,nr_letter):
     # 如果nr_letter是4，那么就是range(1,5)，其实就是1、2、3、4轮
     list_new.append(random.choice(all_number))
 
 
 # print(''.join(list_new))
 print(list_new)
-shuffled_list = list_new.copy()
-random.shuffle(shuffled_list)
-print(''.join(shuffled_list))
+# shuffled_list = list_new.copy()
+# random.shuffle(shuffled_list)
+random.shuffle(list_new)
+
+password = ""
+for char in list_new:
+    password += char
+print(f"Your new password is {password}")
