@@ -1,5 +1,3 @@
-from cgi import print_arguments
-from tabnanny import verbose
 from scapy.all import Ether, IP, TCP,sr1,ICMP,ARP
 import re
 
